@@ -1,8 +1,15 @@
 // Navigation Styles here
 
+@mobile: ~"(max-width: 500px)"; 
+
 nav {
     width: 300px;
     margin-top: 10px;
+    @media @mobile {
+        display: flex;
+        justify-content: center;
+    }
+    
     a {
         padding: 10px;
         font-size: 1.25rem;
