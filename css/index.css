@@ -168,6 +168,16 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  width: 300px;
+  margin-top: 10px;
+}
+nav a {
+  padding: 10px;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: black;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -178,6 +188,24 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.main-header {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.main-header h1 {
+  margin-right: 350px;
+  margin-bottom: 20px;
+}
+h2 {
+  margin-top: 20px;
+}
+.top-content {
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-section {
   margin: 30px 0;
@@ -224,4 +252,17 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.btn {
+  width: 200px;
+  height: 30px;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  cursor: pointer;
+  border-radius: 12px;
+  font-size: 1.5rem;
+}
+.btn:hover {
+  background-color: #FFFFFF;
+  color: #17A2B8;
 }
