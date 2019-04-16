@@ -1,5 +1,44 @@
-.home {
+@mobile: ~"(max-width: 500px)"; 
 
+.main-header {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+  }
+    
+
+    h1 {
+margin-right: 350px;
+margin-bottom: 20px;
+}
+
+}
+h2 {
+  margin-top: 20px;
+}
+
+.top-content {
+  border-bottom: 2px dashed @navigation-border;
+  
+}
+
+.home {
+  @media @mobile {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    flex: wrap;
+    margin-left: 20px;
+    
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -11,6 +50,14 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        width: 400px;
+      }
+      
     }
 
     .img-content {
@@ -52,10 +99,34 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      flex-flow: column;
+    }
+   
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+
     }
   }
+ 
 }// home
+
+
+
+.bottom-line {
+  @media @mobile {
+    width: 430px;
+  }
+}
+
+
+
+.btn {
+  .custom-btn(200px, 30px, #17A2B8, #FFFFFF)
+}
